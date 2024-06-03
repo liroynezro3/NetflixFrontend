@@ -1,0 +1,46 @@
+.list {
+  width: 100%;
+  margin-top: 10px;
+}
+.wrapper {
+  position: relative;
+}
+.sliderArrowLeft {
+  color: rgb(255, 255, 255);
+  min-width: 50px;
+  min-height: 100%;
+  background-color: rgba(23, 23, 23, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+.listTitle {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 50px;
+}
+.container {
+  margin-left: 50px;
+  display: flex;
+  position: relative;
+  width: max-content;
+  margin-top: 10px;
+  transform: translateX(0px);
+  transition: 0.5s all ease;
+}
+.container:hover{
+  z-index: 999;
+}
+.sliderArrowRight {
+  color: rgb(255, 255, 255);
+  min-width: 50px;
+  min-height: 100%;
+  background-color: rgba(23, 23, 23, 0.5);
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  top: 0;
+
+}

@@ -1,0 +1,125 @@
+a{text-decoration: none;}
+.listItem {
+  width: 225px;
+  height: 130px;
+  background-color: black;
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.08);
+  margin-right: 5px;
+  cursor: pointer;
+  color: white;
+  z-index: 80;
+}
+.itemHover{
+  display: none;
+  z-index: 99;
+  width: 325px;
+  transform:translate(-50px, -150px) scale(1.001, 1.1);
+  background-color: rgba(0, 0, 0, 0.99);
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.08);
+border-radius: 8px;
+}
+.listItem:hover .itemHover{
+display: grid;
+}
+.listItem a{
+  z-index: 80;
+  text-decoration: none;
+}
+.listItem img{
+width: 100%;
+height: 100%;
+}
+.listItem video{
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+.itemInfo {
+  display: flex;
+ flex-direction: column;
+  padding: 8px;
+}
+.itemInfo .icons {
+  display: flex;
+  margin-bottom: 10px;
+}
+.icon {
+  margin-right: 12px;
+  border: 2px solid white;
+  border-radius: 50px;
+  box-sizing: content-box;
+  padding: 4px;
+  font-size: 28px;
+}
+.itemInfoTop {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.itemInfoTop span{
+color: grey;
+}
+.itemInfoTop .limit {
+  margin: 5px 10px 2px 10px;
+  padding: 1px 3px;
+  border: 2px solid grey;
+}
+.desc {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.genre{
+  font-size: 14px;
+  color: lightgray;
+  padding-bottom: 8px;
+}
+.aroundSpan{
+  width: 100%;height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: #FF3D00;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+@media only screen and (min-width: 280px) and (max-width: 920px) { 
+  .itemHover{
+    transition: 1s all;
+    transform:translate(-8px, -150px) scale(1.1, 1.1);
+    width: 240px;
+    background-color: black;
+    box-shadow: 0px 0px 15px 0px rgba(59, 58, 58, 0.807);
+  }
+  h3{font-size: 16px;}
+  .itemInfoTop span{
+    font-size: 14px;
+  }
+  .itemInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 8px;
+  }
+  .icon {
+    margin-right: 12px;
+    border: 2px solid white;
+    border-radius: 50px;
+    box-sizing: content-box;
+    padding: 2px;
+  }
+}   
+ @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
